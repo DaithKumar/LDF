@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Form</title>
+    <link rel="stylesheet" href="/static/form.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form action="/session_submit" method="post">
+        <div class="form-group">
+            <label for="sessionname">Session Name:</label>
+            <input type="text" id="sessionname" name="sessionname" placeholder="enter session name">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

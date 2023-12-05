@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logs Result</title>
+    <style>
+       table{
+        width: 100%;
+        border-collapse: collapse;
+        font-family: sans-serif;
+       }
+       th, td {
+        border: 1px solid;
+        text-align: left;
+        padding: 8px;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1 style="font-family: 'Courier New', Courier, monospace;">Logs Result</h1>
+    <table >
+        <thead>
+            <tr>
+                <th>Log ID</th>
+                <th>MPID</th>
+                <th>SeverityID</th>
+                <th>MachineName</th>
+                <th>Category</th>
+                <th>Method</th>
+                <th>EventID</th>
+                <th>CommonIdentifier</th>
+                <th>Message</th>
+                <th>CreatedBy</th>
+                <th>CreatedDate</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+                <td>{{ row[7] }}</td>
+                <td>{{ row[8] }}</td>
+                <td>{{ row[9] }}</td>
+                <td>{{ row[10] }}</td>
+                <!-- Add more cells as needed -->
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

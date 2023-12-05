@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    background-color: skyblue;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 10%;
+    padding-top: 5px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .block-1, .block-2, .block-3, .block-4 {
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    flex: 35%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .block-1:hover, .block-2:hover, .block-3:hover, .block-4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
